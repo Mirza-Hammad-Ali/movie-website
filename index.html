@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MovieZone</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <div class="logo">🎬 MovieZone</div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Search movie..." />
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <p>WELCOME TO MOVIEZONE</p>
+
+        <h1>Watch Your Favorite Movies</h1>
+
+        <p>
+          Discover amazing movies, explore different genres and enjoy your
+          favorite entertainment.
+        </p>
+
+        <a href="#movies" class="watch-btn"> Browse Movies </a>
+      </div>
+    </section>
+
+    <!-- MOVIES -->
+    <section class="movies-section" id="movies">
+      <h2>Popular Movies</h2>
+
+      <div class="movie-container" id="movieContainer">
+        <!-- Movies will come from JavaScript -->
+      </div>
+    </section>
+
+    <!-- VIDEO POPUP -->
+    <div class="modal" id="movieModal">
+      <div class="modal-content">
+        <button class="close" id="closeModal">✕</button>
+
+        <h2 id="modalTitle"></h2>
+
+        <video id="movieVideo" controls>
+          <source src="" type="video/mp4" />
+        </video>
+
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <h2>About MovieZone</h2>
+
+      <p>
+        MovieZone is a simple movie website created using HTML, CSS and
+        JavaScript.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <h3>🎬 MovieZone</h3>
+
+      <p>Enjoy movies. Enjoy entertainment.</p>
+
+      <p>© 2026 MovieZone</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

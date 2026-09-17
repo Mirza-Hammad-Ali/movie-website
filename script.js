@@ -1,7 +1,16 @@
-/* ==========================
-   MOVIE DATA
-========================== */
+const API_KEY = "c5b80a6846a3c0c0be8abe64bad1f2b6";
 
+const API_URL =
+  `https://api.themoviedb.org/3/movie/popular?api_key=${c5b80a6846a3c0c0be8abe64bad1f2b6}&language=en-US&page=1`;
+
+fetch(API_URL)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data.results);
+  })
+  .catch(error => {
+    console.log("Error:", error);
+  });
 const movies = [
   {
     id: 1,
